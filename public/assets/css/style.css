@@ -3,23 +3,22 @@
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity .8s ease-out, visibility 0s linear .5s;
+    transition: opacity 0.8s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
- }
+}
 
- #spinner.show {
-     transition: opacity .8s ease-out, visibility 0s linear .0s;
-     visibility: visible;
-     opacity: 1;
- }
+#spinner.show {
+    transition: opacity 0.8s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
 
 /*** Spinner End ***/
-
 
 /*** Button Start ***/
 .btn {
     font-weight: 600;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .btn-square {
@@ -64,7 +63,6 @@
 
 /*** Button End ***/
 
-
 /*** Topbar Start ***/
 
 .topbar .top-info {
@@ -94,12 +92,15 @@
 }
 
 @keyframes mymove {
-    from {left: -100%;}
-    to {left: 100%;}
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+    }
 }
 
 /*** Topbar End ***/
-
 
 /*** Navbar Start ***/
 .navbar .navbar-nav {
@@ -111,7 +112,6 @@
     color: var(--bs-white);
     font-size: 18px;
     outline: none;
-    
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -135,7 +135,7 @@
         top: 100%;
         transform: rotateX(-75deg);
         transform-origin: 0% 0%;
-        transition: .5s;
+        transition: 0.5s;
         opacity: 0;
     }
 }
@@ -143,12 +143,11 @@
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    transition: .5s;
+    transition: 0.5s;
     opacity: 1;
 }
 
 /*** Navbar End ***/
-
 
 /*** Carousel Start ***/
 
@@ -163,7 +162,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .carousel-caption {
@@ -192,7 +191,7 @@
 
 .carousel-control-prev:hover {
     background: var(--bs-secondary);
-    transition: .8s;
+    transition: 0.8s;
 }
 
 .carousel-control-next {
@@ -208,7 +207,7 @@
 
 .carousel-control-next:hover {
     background: var(--bs-secondary);
-    transition: .8s;
+    transition: 0.8s;
 }
 
 .carousel-caption .carousel-content a button.carousel-content-btn1 {
@@ -263,7 +262,7 @@
     .carousel-item {
         min-height: 500px;
     }
-    
+
     .carousel-item img {
         min-height: 500px;
         object-fit: cover;
@@ -282,7 +281,7 @@
     .carousel-item {
         min-height: 400px;
     }
-    
+
     .carousel-item img {
         min-height: 400px;
         object-fit: cover;
@@ -298,11 +297,12 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
 
-.page-header .breadcrumb-item+.breadcrumb-item::before {
+.page-header .breadcrumb-item + .breadcrumb-item::before {
     color: var(--bs-white);
 }
 
@@ -314,18 +314,16 @@
 
 /*** Carousel End ***/
 
-
 /*** Services Start ***/
 
 .services .services-item {
-    box-shadow: 0 0 60px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 100%;
     border-radius: 10px;
     padding: 10px 0;
     position: relative;
 }
-
 
 .services-content::after {
     position: absolute;
@@ -336,7 +334,7 @@
     left: 0;
     border-radius: 10px 10px 0 0;
     background: rgba(3, 43, 243, 0.8);
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .services-content::after {
@@ -348,7 +346,7 @@
 .services-item:hover .services-content::after {
     height: 100%;
     opacity: 1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .services-item:hover .services-content-icon {
@@ -358,7 +356,7 @@
 
 .services-item .services-content-icon i,
 .services-item .services-content-icon p {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .services-item:hover .services-content-icon i {
@@ -370,7 +368,6 @@
 }
 
 /*** Services End ***/
-
 
 /*** Project Start ***/
 
@@ -390,7 +387,7 @@
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .project-img::after {
@@ -404,7 +401,7 @@
     border-radius: 10px;
     opacity: 1;
     z-index: -1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .project-content {
@@ -428,7 +425,7 @@
 
 .project-item:hover .project-content {
     opacity: 1;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .project-item:hover .project-img::before,
@@ -437,7 +434,6 @@
 }
 
 /*** Project End ***/
-
 
 /*** Blog Start ***/
 .blog-item .blog-btn {
@@ -455,7 +451,6 @@
     position: absolute;
     top: 6px;
     left: -140px;
-    
 }
 
 .blog-btn-icon:hover .blog-icon-2 {
@@ -475,7 +470,6 @@
 }
 
 /*** Blog End ***/
-
 
 /*** Team Start ***/
 
@@ -509,12 +503,12 @@
 
 .team-img img {
     border: 10px solid var(--bs-secondary);
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .team-item:hover h4 {
     color: var(--bs-primary);
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .team-item:hover .team-img img {
@@ -546,7 +540,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .team-carousel .owl-nav .owl-prev:hover,
@@ -571,12 +565,10 @@
 
 /*** Team End ***/
 
-
 /*** Testimonial Start ***/
 
 .testimonial-item {
     background: #e3f0eb;
-
 }
 
 .testimonial-carousel .owl-dots {
@@ -594,7 +586,7 @@
     height: 15px;
     background: #c1dad0;
     border-radius: 15px;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .testimonial-carousel .owl-dot.active {
@@ -608,16 +600,15 @@
 }
 
 .testimonial-carousel .owl-item .testimonial-item {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: #FFFFFF !important;
-    box-shadow: 0 0 30px #DDDDDD;
+    background: #ffffff !important;
+    box-shadow: 0 0 30px #dddddd;
 }
 
 /*** Testimonial End ***/
-
 
 /*** Contact Start ***/
 .contact-detail::before {
@@ -627,29 +618,29 @@
     width: 100%;
     top: 0;
     left: 0;
-    background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, .3)), url(../img/background.jpg) center center no-repeat;
+    background: linear-gradient(rgb(210, 243, 235, 1), rgba(230, 250, 245, 0.3)),
+        url(../img/background.jpg) center center no-repeat;
     background-size: cover;
     border-radius: 10px;
     z-index: -1;
 }
 
 .contact-map {
-    background: #26d48c;
+    background: #36a3df;
 }
 
 .contact-form {
-    background: #26d48c;
+    background: #36a3df;
 }
 
 /*** Contact End ***/
-
 
 /*** Footer Start ***/
 
 .footer .short-link a,
 .footer .help-link a,
 .footer .contact-link a {
-    transition: .5s;
+    transition: 0.5s;
 }
 
 .footer .short-link a:hover,
